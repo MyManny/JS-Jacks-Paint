@@ -1,11 +1,12 @@
 function configureListeners() {
-    let images = // select img elements  
+    let images = document.querySelectorAll("img"); 
 
 
      for (var i = 0; i < images.length; i++) {        
-        // iterate over images and add mouseover event listeners      
-    } 
-}
+        images[i].addEventListener("mouseover", function () {  
+            console.log("Mouse over the image!");
+        } 
+}}
 
 function addOpacity(event) {
     // add appropriate CSS class
